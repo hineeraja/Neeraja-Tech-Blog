@@ -1,0 +1,136 @@
+:root {
+  --primary: #ffffff;
+  --secondary: #e9f584;
+  --tertiary: #dbe48d;
+  --dark: #0a1701;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* === BASE STYLES === */
+body {
+  font-family: serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 1rem;
+  color: var(--dark);
+}
+
+input {
+  padding: 10px;
+  margin: 0 0 5px;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+/* === TYPOGRAPHY === */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Amita", cursive;
+  margin: 0;
+  color: var(--tertiary);
+  line-height: 1.3;
+  letter-spacing: 1px;
+}
+
+h2 a:visited {
+  color: var(--tertiary);
+}
+
+h2 a {
+  color: var(--primary);
+}
+
+/* === LAYOUT & NAVIGATION === */
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav-item {
+  margin: 0 30px;
+}
+
+.nav-item a {
+  color: var(--primary);
+}
+
+main {
+  width: 94%;
+  margin: 20px auto;
+}
+
+/* === UI COMPONENTS === */
+.btn {
+  display: block;
+  margin: 5px 0;
+  padding: 6px 5px;
+  width: 100%;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1.2rem;
+  background-color: var(--secondary);
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--dark);
+  color: var(--primary);
+}
+
+.card {
+  margin-bottom: 25px;
+  border-radius: var(--border-radius);
+}
+
+.card-header,
+.card-body {
+  padding: 1%;
+}
+
+.card-header {
+  background-color: var(--dark);
+  color: var(--primary);
+}
+
+.card-body {
+  color: var(--dark);
+}
+
+/* === RESPONSIVE STYLES === */
+@media (max-width: 768px) {
+  header {
+    justify-content: center;
+  }
+
+  header h1 {
+    text-align: center;
+    width: 100%;
+  }
+
+  header nav ul {
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .nav-item {
+    margin: 0 15px;
+  }
+
+}
